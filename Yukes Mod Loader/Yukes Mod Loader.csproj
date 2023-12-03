@@ -15,4 +15,10 @@
       <PackageReference Include="xMcacutt.Binft" Version="1.0.3" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="README.md">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
