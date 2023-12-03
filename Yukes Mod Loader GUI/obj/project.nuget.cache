@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pRP7T5lConjXOSdVRkQZFMp5UEJokZP2Lz4IZkhGoWrzGQe4xm0RPyOIEHVi9nCCe/vWE5swnIUQXIctTmN0TQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\RiderProjects\\Yukes Mod Loader\\Yukes Mod Loader GUI\\Yukes Mod Loader GUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\sharpvectors.reloaded\\1.8.2\\sharpvectors.reloaded.1.8.2.nupkg.sha512"
+  ],
+  "logs": []
+}

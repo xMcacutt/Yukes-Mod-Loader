@@ -1,0 +1,37 @@
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI_MarkupCompile.cache
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI.g.resources
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI.AssemblyInfoInputs.cache
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI.AssemblyInfo.cs
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI.csproj.CoreCompileInputs.cache
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\Yukes Mod Loader GUI.exe
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\Yukes Mod Loader GUI.deps.json
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\Yukes Mod Loader GUI.runtimeconfig.json
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\Yukes Mod Loader GUI.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\Yukes Mod Loader GUI.pdb
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI_MarkupCompile.lref
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\refint\Yukes Mod Loader GUI.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI.pdb
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI.genruntimeconfig.cache
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\ref\Yukes Mod Loader GUI.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\SharpVectors.Converters.Wpf.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\SharpVectors.Core.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\SharpVectors.Css.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\SharpVectors.Dom.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\SharpVectors.Model.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\SharpVectors.Rendering.Gdi.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\SharpVectors.Rendering.Wpf.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\SharpVectors.Runtime.Wpf.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI.csproj.AssemblyReference.cache
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\Yukes Mod Loader GUI.csproj.CopyComplete
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\Views\ModListingWindow.baml
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\Views\ModListingWindow.g.cs
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\Views\Settings.g.cs
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\App.g.cs
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\App.baml
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\Style.baml
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\Views\Settings.baml
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\Icons\Icons.baml
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\Newtonsoft.Json.dll

@@ -1,0 +1,32 @@
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\YukesModLoader.exe
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\YukesModLoader.deps.json
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\YukesModLoader.runtimeconfig.json
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\YukesModLoader.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\YukesModLoader.pdb
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\Ps2IsoTools.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\System.CommandLine.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\BinaryFileTools.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\cs\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\de\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\es\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\fr\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\it\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\ja\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\ko\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\pl\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\pt-BR\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\ru\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\tr\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\zh-Hans\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\bin\Release\net7.0\zh-Hant\System.CommandLine.resources.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\Yukes Mod Loader.csproj.AssemblyReference.cache
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\Yukes Mod Loader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\Yukes Mod Loader.AssemblyInfoInputs.cache
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\Yukes Mod Loader.AssemblyInfo.cs
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\Yukes Mod Loader.csproj.CoreCompileInputs.cache
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\Yukes Mod Loader.csproj.CopyComplete
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\YukesModLoader.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\refint\YukesModLoader.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\YukesModLoader.pdb
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\Yukes Mod Loader.genruntimeconfig.cache
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader\obj\Release\net7.0\ref\YukesModLoader.dll

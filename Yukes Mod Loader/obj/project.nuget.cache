@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "oDLKzivCZTnjfb37cMGz63qHvnyPDUSa9bjXFZM3gdzcfOf1mraqAWOrXi+V5MiwDOV/Z+BAM4bKzHz+MtCyXw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\RiderProjects\\Yukes Mod Loader\\Yukes Mod Loader\\Yukes Mod Loader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\ps2isotools\\1.0.1\\ps2isotools.1.0.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.commandline\\2.0.0-beta4.22272.1\\system.commandline.2.0.0-beta4.22272.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\xmcacutt.binft\\1.0.3\\xmcacutt.binft.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

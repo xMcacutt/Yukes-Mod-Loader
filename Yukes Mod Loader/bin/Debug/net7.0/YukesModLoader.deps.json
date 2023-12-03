@@ -1,0 +1,114 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "YukesModLoader/1.0.0": {
+        "dependencies": {
+          "Ps2IsoTools": "1.0.1",
+          "System.CommandLine": "2.0.0-beta4.22272.1",
+          "xMcacutt.Binft": "1.0.3"
+        },
+        "runtime": {
+          "YukesModLoader.dll": {}
+        }
+      },
+      "Ps2IsoTools/1.0.1": {
+        "runtime": {
+          "lib/net6.0/Ps2IsoTools.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
+      "System.CommandLine/2.0.0-beta4.22272.1": {
+        "runtime": {
+          "lib/net6.0/System.CommandLine.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.22.27201"
+          }
+        },
+        "resources": {
+          "lib/net6.0/cs/System.CommandLine.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net6.0/de/System.CommandLine.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0/es/System.CommandLine.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0/fr/System.CommandLine.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0/it/System.CommandLine.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net6.0/ja/System.CommandLine.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0/ko/System.CommandLine.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0/pl/System.CommandLine.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net6.0/pt-BR/System.CommandLine.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0/ru/System.CommandLine.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0/tr/System.CommandLine.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0/zh-Hans/System.CommandLine.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net6.0/zh-Hant/System.CommandLine.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "xMcacutt.Binft/1.0.3": {
+        "runtime": {
+          "lib/net7.0/BinaryFileTools.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "YukesModLoader/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ps2IsoTools/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HoxgRn+i9wwcqhsdPpAWPlbXEiA0tsTmL5Ts5hAnkr2Xd7k7NQk8B7RcW0OVhOGWn9QK/+kT/xT74o7wXpV/KA==",
+      "path": "ps2isotools/1.0.1",
+      "hashPath": "ps2isotools.1.0.1.nupkg.sha512"
+    },
+    "System.CommandLine/2.0.0-beta4.22272.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1uqED/q2H0kKoLJ4+hI2iPSBSEdTuhfCYADeJrAqERmiGQ2NNacYKRNEQ+gFbU4glgVyK8rxI+ZOe1onEtr/Pg==",
+      "path": "system.commandline/2.0.0-beta4.22272.1",
+      "hashPath": "system.commandline.2.0.0-beta4.22272.1.nupkg.sha512"
+    },
+    "xMcacutt.Binft/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H3nfeBys0vpsJfizl8GssKF3wF2NUIak3JXgfCzgpbPEeHP5xgLzAy7jKbWtaHXpBjUHCu379GqlCNbzfI3Lhg==",
+      "path": "xmcacutt.binft/1.0.3",
+      "hashPath": "xmcacutt.binft.1.0.3.nupkg.sha512"
+    }
+  }
+}
