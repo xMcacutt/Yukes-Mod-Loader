@@ -1,5 +1,5 @@
 # Yukes PS2 Mod Loader
-![](Yukes Mod Loader/ModLoader.png)
+![](Yukes%20Mod%20Loader/ModLoader.png)
 
 A mod loader for mid 2000s DIP based Playstation 2 Yuke's games
 to simplify and streamline the processes required for repackaging files into
