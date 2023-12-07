@@ -1,41 +1,66 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
+using Yukes_Mod_Loader_GUI.GUI.Models;
+using Yukes_Mod_Loader_GUI.GUI.ViewModels;
 
 namespace Yukes_Mod_Loader_GUI.GUI;
 
-public class GameSettings
-{
-    public string? Name { get; set; }
-    public string? IsoDir { get; set; }
-    public string? ExtDir { get; set; }
-    public string? ModDir { get; set; }
-    public bool KeepDip { get; set; }
-
-    public GameSettings(string name, string isoDir, string extDir, string modDir, bool keepDip)
-    {
-        Name = name;
-        IsoDir = isoDir;
-        ExtDir = extDir;
-        ModDir = modDir;
-        KeepDip = keepDip;
-    }
-}
-
 public class SettingsHandler
 {
-    public static Dictionary<string, GameSettings> Games { get; set; } = new();
-
-    public static void Initialize()
+    public static ObservableCollection<GameViewModel> LoadGames()
     {
-        var jsonContent = System.IO.File.ReadAllText("./GameSettings.json");
-        var gameSettingsList = JsonConvert.DeserializeObject<List<GameSettings>>(jsonContent);
-        Games = gameSettingsList.ToDictionary(game => game.Name, game => game);
+        var games = new ObservableCollection<GameViewModel>();
+
+        try
+        {
+            var json = File.ReadAllText("./GameSettings.json");
+            var gameList = JsonConvert.DeserializeObject<List<Game>>(json);
+            games = new ObservableCollection<GameViewModel>(
+                gameList?.Select(game => new GameViewModel(game))
+            );
+        }
+        catch (Exception ex)
+        {
+            // Handle exceptions (e.g., file not found, invalid JSON, etc.)
+            Console.WriteLine($"Error loading games from JSON: {ex.Message}");
+        }
+
+        return games;
     }
 
-    public static void Save()
+    public static ObservableCollection<ModViewModel> LoadMods(string gameFilter = "All")
     {
-        var jsonContent = JsonConvert.SerializeObject(Games.Values, Formatting.Indented);
-        System.IO.File.WriteAllText("./GameSettings.json", jsonContent);
+        var mods = new ObservableCollection<ModViewModel>();
+        var modDirs = new List<string>();
+        if (gameFilter == "All")
+        {
+            foreach (var game in LoadGames())
+            {
+                if (!Directory.Exists(game.ModDir)) continue;
+                modDirs = Directory.GetDirectories(game.ModDir)
+                    .Where(folder => Directory.GetFiles(folder, "mod.json").Any()).ToList();
+            }
+        }
+        else
+        {
+            var game = LoadGames().FirstOrDefault(g => g.EditableName == gameFilter);
+            if (game != null && !string.IsNullOrEmpty(game.ModDir))
+            {
+                modDirs.Add(game.ModDir);
+            }
+        }
+        foreach (var folder in modDirs)
+        {
+            {
+                var json = File.ReadAllText(Path.Combine(folder, "mod.json"));
+                var mod = JsonConvert.DeserializeObject<Mod>(json);
+                if (mod != null) mods.Add(new ModViewModel(mod));
+            }
+        }
+        return mods;
     }
 }

@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Yukes_Mod_Loader_GUI.GUI;
+using Yukes_Mod_Loader_GUI.GUI.ViewModels;
 
 namespace Yukes_Mod_Loader_GUI
 {
@@ -23,6 +25,19 @@ namespace Yukes_Mod_Loader_GUI
         public ModListingWindow()
         {
             InitializeComponent();
+            if (DataContext is ModListingViewModel viewModel)
+            {
+                viewModel.Initialize();
+            }
+            MouseDown += delegate{DragMove();};
+        }
+
+        private void ModsDataGrid_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ModsDataGrid.SelectedItem is ModViewModel selectedMod)
+            {
+                ((ModListingViewModel)DataContext).SelectedMod = selectedMod;
+            }
         }
     }
 }

@@ -1,67 +1,55 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows;
+using System.Windows.Forms;
 using System.Windows.Input;
+using System.Windows.Media;
+using Yukes_Mod_Loader_GUI.GUI.Models;
+using Yukes_Mod_Loader_GUI.GUI.ViewModels;
+using Cursors = System.Windows.Input.Cursors;
+using TextBox = System.Windows.Controls.TextBox;
 
 namespace Yukes_Mod_Loader_GUI.GUI.Views;
 
 public partial class Settings : Window
 {
-    private bool IsEditing;
-    private ObservableCollection<string> _gamesList = new ObservableCollection<string>();
-
     public Settings()
     {
         InitializeComponent();
-        this.MouseDown += delegate{DragMove();};
-        // Assuming you have a method to load existing games from your JSON settings file
-        LoadGamesFromSettings();
+        MouseDown += delegate{DragMove();};
+        if (DataContext is SettingsViewModel viewModel)
+        {
+            viewModel.Initialize();
+            if (viewModel.Games.Count != 0) viewModel.SelectedGame = viewModel.Games[0];
+        }
     }
 
     private void AddGame_Click(object sender, RoutedEventArgs e)
     {
-        // Logic to add a new game to the list
-        _gamesList.Add("New Game");
+        if (DataContext is SettingsViewModel viewModel)
+        {
+            viewModel.AddGame();
+        }
     }
 
     private void RemoveGame_Click(object sender, RoutedEventArgs e)
     {
         // Logic to remove the selected game from the list
-        if (GameListBox.SelectedIndex != -1)
+        if (GameListBox.SelectedIndex != -1 && DataContext is SettingsViewModel viewModel)
         {
-            _gamesList.RemoveAt(GameListBox.SelectedIndex);
+            viewModel.RemoveGame((GameListBox.SelectedItem as GameViewModel).EditableName);
         }
     }
 
     private void GameListBox_SelectionChanged(object sender, RoutedEventArgs e)
     {
-        // Logic to handle selection change in the games list
         if (GameListBox.SelectedIndex != -1)
         {
-            // Load settings for the selected game and populate fields
-            LoadSettingsForSelectedGame();
             GameSettingsPanel.Visibility = Visibility.Visible;
         }
         else
         {
-            // No game selected, hide the settings fields
             GameSettingsPanel.Visibility = Visibility.Collapsed;
         }
-    }
-
-    private void LoadGamesFromSettings()
-    {
-        // Logic to load existing games from your JSON settings file
-        // Add the loaded games to the ObservableCollection
-        _gamesList.Add("Game1");
-        _gamesList.Add("Game2");
-        GameListBox.ItemsSource = _gamesList;
-    }
-
-    private void LoadSettingsForSelectedGame()
-    {
-        // Logic to load settings for the selected game from your JSON settings file
-        // Populate the fields accordingly
-        IsoDirectoryTextBox.Text = "Loaded Iso Directory";
     }
 
     private void SaveSettings_Click(object sender, RoutedEventArgs e)
@@ -71,32 +59,73 @@ public partial class Settings : Window
 
     private void SelectIsoDirectory_Click(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        using var folderDialog = new FolderBrowserDialog();
+        var result = folderDialog.ShowDialog();
+        if (result == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(folderDialog.SelectedPath))
+        {
+            (DataContext as SettingsViewModel).SelectedGame.IsoDir = folderDialog.SelectedPath;
+        }
     }
 
     private void SelectFilesDirectory_Click(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        using var folderDialog = new FolderBrowserDialog();
+        var result = folderDialog.ShowDialog();
+        if (result == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(folderDialog.SelectedPath))
+        {
+            (DataContext as SettingsViewModel).SelectedGame.ExtDir = folderDialog.SelectedPath;
+        }
     }
 
     private void SelectModsDirectory_Click(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        using var folderDialog = new FolderBrowserDialog();
+        var result = folderDialog.ShowDialog();
+        if (result == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(folderDialog.SelectedPath))
+        {
+            (DataContext as SettingsViewModel).SelectedGame.ModDir = folderDialog.SelectedPath;
+        }
     }
 
-    private void CloseButton_Click(object sender, RoutedEventArgs e)
+    private void TextBox_PreviewMouseDown(object sender, MouseButtonEventArgs e)
     {
-        throw new System.NotImplementedException();
+        // Set focus on the ListBox to ensure the ListBox item gets selected
+        GameListBox.Focus();
+
+        // Manually set the ListBox selection based on the TextBox's DataContext
+        if (sender is TextBox textBox && textBox.DataContext is GameViewModel selectedItem)
+        {
+            GameListBox.SelectedItem = selectedItem;
+        }
     }
 
-    private void MaximizeButton_Click(object sender, RoutedEventArgs e)
+    private void TextBox_PreviewMouseDoubleClick(object sender, MouseButtonEventArgs e)
     {
-        throw new System.NotImplementedException();
+        if (sender is TextBox textBox)
+        {
+            textBox.IsReadOnly = false;
+            textBox.Cursor = Cursors.IBeam;
+            textBox.Foreground = new SolidColorBrush(Colors.AccentColor);
+            textBox.Background = new SolidColorBrush(Colors.DarkBackColor);
+            textBox.SelectionStart = textBox.Text.Length;
+            textBox.SelectionLength = 0;
+            textBox.CaretBrush = new SolidColorBrush(Colors.MidTextColor);
+            e.Handled = true;
+        }
+        
     }
 
-    private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+    private void UIElement_OnLostFocus(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        if (sender is TextBox textBox)
+        {
+            textBox.IsReadOnly = true;
+            textBox.Cursor = Cursors.Hand;
+            textBox.Background = Brushes.Transparent;
+            textBox.Foreground = new SolidColorBrush(Colors.LightTextColor);
+            textBox.SelectionLength = 0;
+            textBox.CaretBrush = Brushes.Transparent;
+            e.Handled = true;
+        }
     }
-    
 }

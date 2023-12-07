@@ -1,0 +1,23 @@
+﻿[
+  {
+    "Name": "Game1",
+    "IsoDir": "/path/to/iso1",
+    "ExtDir": "/path/to/ext1",
+    "ModDir": "/path/to/mod1",
+    "Keep": true
+  },
+  {
+    "Name": "The Dog Island",
+    "IsoDir": "C:/Users/admin/Documents/DOGIsland/PS2/VERSIONS/USA/December 5/isoFiles",
+    "ExtDir": "C:/Users/admin/Documents/DOGIsland/PS2/VERSIONS/USA/December 5/root",
+    "ModDir": "C:/Users/admin/Documents/DOGIsland/PS2/VERSIONS/USA/December 5/mods",
+    "Keep": false
+  },
+  {
+    "Name": "Game3",
+    "IsoDir": "/path/to/iso3",
+    "ExtDir": "/path/to/ext3",
+    "ModDir": "/path/to/mod3",
+    "Keep": true
+  }
+]

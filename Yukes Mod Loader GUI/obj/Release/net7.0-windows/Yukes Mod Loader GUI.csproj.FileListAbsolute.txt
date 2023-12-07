@@ -33,5 +33,5 @@ C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\n
 C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\App.baml
 C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\Style.baml
 C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\Views\Settings.baml
-C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\obj\Release\net7.0-windows\GUI\Icons\Icons.baml
 C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\Newtonsoft.Json.dll
+C:\Users\admin\RiderProjects\Yukes Mod Loader\Yukes Mod Loader GUI\bin\Release\net7.0-windows\GameSettings.json

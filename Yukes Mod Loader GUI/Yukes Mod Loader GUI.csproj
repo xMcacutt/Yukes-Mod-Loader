@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <TargetFramework>net7.0-windows</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
         <RootNamespace>Yukes_Mod_Loader_GUI</RootNamespace>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
@@ -42,6 +42,16 @@
         <XamlRuntime>Wpf</XamlRuntime>
         <SubType>Designer</SubType>
       </ApplicationDefinition>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <None Update="GameSettings.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Resource Include="Fonts\Font Awesome 6 Free-Solid-900.otf" />
     </ItemGroup>
 
 </Project>
